@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KATIK - Kalkulator Matematika</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>KATIK</h1>
+      <h2>Kalkulator Matematika</h2>
+    </header>
+    <main>
+      <div class="information">
+        <span>Welcome To KATIK</span>
+        <p>Halo sobat. selamat datang di Katik :)<br>
+          Katik merupakan sebuah website sederhana untuk menghitung luas dan keliling bangun datar
+        </p>
+      </div>
+      <div class="calculator">
+        <div class="square">
+          <div class="side right">s</div>
+          <div class="side bottom">s</div>
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="sideInput">Panjang Sisi (cm):</label>
+        <input type="number" id="sideInput" placeholder="Masukan nilai berupa angka, dapat menggunakan angka desimal" required >
+      </div>
+      <div class="calc-options">
+        <label for="calcType">Pilih Operasi:</label>
+        <select id="calcType">
+          <option value="luas">Hitung Luas</option>
+          <option value="keliling">Hitung Keliling</option>
+        </select>
+      </div>
+      <button id="calculateBtn">Hitung</button>
+    </main>
+    <div class="process-detail">
+      <p id="hasil">Hasil Perhitungan</p>
+      <p id="processMessage"></p>
+    </div>
+    <span id="creator">@dwikyriza -  RevoU Software Engineer 4-9-2023</span>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
