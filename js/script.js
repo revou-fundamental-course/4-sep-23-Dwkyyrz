@@ -1,20 +1,16 @@
-// Tambahkan script JavaScript berikut
 
-// Ambil elemen-elemen yang diperlukan
 const sideElements = document.querySelectorAll(".side");
 const sideInput = document.getElementById("sideInput");
 const processDetail = document.querySelector(".process-detail");
 const processMessage = document.getElementById("processMessage");
 const calculateBtn = document.getElementById("calculateBtn");
 
-// Fungsi untuk memperbarui teks sisi
 function updateSideText(value) {
   sideElements.forEach(function (sideElement) {
     sideElement.textContent = value + " cm";
   });
 }
 
-// Fungsi untuk menghitung luas dan keliling
 function calculate() {
   const sideLength = parseFloat(sideInput.value);
 
@@ -38,13 +34,12 @@ function calculate() {
   }
 }
 
-// Tambahkan event listener untuk input
 sideInput.addEventListener("input", function () {
   const value = this.value;
   updateSideText(value);
 });
 
-// Tambahkan event listener untuk tombol hitung
+
 calculateBtn.addEventListener("click", function (e) {
   e.preventDefault();
   calculate();
